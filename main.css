@@ -1,0 +1,129 @@
+body {
+   margin: 0;
+   background-color: hsl(177, 80%, 31%);
+   font-family: "Josefin Sans", sans-serif;
+}
+
+::placeholder { 
+    color: hsl(0, 0%, 73%);
+    opacity: 1;
+}
+
+.login-screen { 
+    /* width: 85vw;
+    height: 90vh; */
+    display: flex;
+    justify-content: space-between;
+
+    background-color: #fff;
+    border-radius: 7px;
+    margin: 4.5vh 10vw 3.5vh;
+    transition: all 0.5s ease-in;  
+}
+
+.form-container {
+
+    /* width: 100%; */
+    height: 91vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 13vw;
+}
+
+.form {
+    padding: 0px 0 25vh 0;
+}
+.form-title {
+    margin: 0 0 4vh 0;
+    text-transform: uppercase;
+    font-size: 1em;
+    color: hsl(177, 80%, 31%);
+    padding: 24vh 0 0 0;
+}
+
+.input {
+    border: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    outline: none;
+    width: 100%;
+    padding: 6px 0;
+    color: hsl(177, 80%, 31%);
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+
+.submit-btn {
+    background-color: hsl(177, 80%, 31%);
+    border: 0;
+    outline: none;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 12px 15px;
+    font-weight: 500;
+    border-radius: 2px;
+    width: 100%;
+    margin-top: 40px;
+    box-shadow: 0px 17px 10px -10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.slider-panel {
+    background-image: url("images/5.jpg");
+    display: none;
+}
+
+.submit-btn:hover {
+    background-color: hsl(178, 90%, 30%);
+}
+
+@media screen and (min-width: 40em) {
+    .login-screen {
+        margin: 0;
+        height: 100vh;
+        border-radius: 0;
+    }
+
+    .slider-panel {
+        flex: 1 0 65%;    
+        display: flex;
+        border-right: .5px solid #aaaaaa6b;
+    }
+    .slider-panel img {
+        width: 100%;
+        height: 100%;
+        border-radius: 7px 0 0 7px;
+    }
+
+    .form-container {      
+        flex: 0 1 25%;
+        width: 35vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0 10vh 0 5vw;
+        flex: 0 1 auto;
+    }
+}
+
+@media screen and (min-width: 60em) {
+    .login-screen {
+        margin: 4.5vh 10vw 3.5vh;
+        height: auto;
+        border-radius: 7px;
+    }
+     .slider-panel {    
+        height: 91vh;
+        border-right: 1px solid #aaaaaa6b;
+    }
+
+    .form-container {
+        
+        height: 91vh;
+        /* width: 35vh; */
+    }
+}
